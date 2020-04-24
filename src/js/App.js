@@ -1,12 +1,12 @@
-export default function App () {
+/** @jsx MunkeyReact.createElement */
 
-    var publicAPI = {}
+import { MunkeyReact } from "./dom";
 
-    return publicAPI = {
-        logMessage: logMessage
-    }
 
-    function logMessage() {
-        console.log("Hello World")
-    }
+export const App = () => {
+
+    const element = <h1>Hello, from element</h1>;
+
+    return element;
 }
+
