@@ -1,8 +1,5 @@
-/** @jsx MunkeyReact.createElement */
-
 import '../css/style.css'
 import { App } from './App'
-import { MunkeyReact } from './dom'
 
 // **********************************
 // **********************************
@@ -12,7 +9,5 @@ import { MunkeyReact } from './dom'
 if(typeof(module.hot) !== 'undefined') {
   module.hot.accept() // eslint-disable-line no-undef  
 }
-
-const root = document.getElementById('root')
 
 App()
